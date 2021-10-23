@@ -8,21 +8,11 @@ import {Router} from "@angular/router";
 })
 export class LoginComponent implements OnInit {
 
-  constructor(private router: Router) {
+  constructor() {
   }
 
-  username: string | undefined;
-  password: string | undefined;
 
   ngOnInit(): void {
-  }
-
-  login() {
-    if (this.username == 'admin' && this.password == 'admin') {
-      this.router.navigate(["user"]);
-    } else {
-      this.router.navigate(['login']);
-    }
   }
 
 }
