@@ -7,7 +7,7 @@
       </div>
       <div class="col">
         <label for="password">Votre mot de passe :</label>
-        <input type="password" id="password" name="password">
+        <input type="password" [(ngModel)]="form.password" id="password" name="password" autocomplete="on">
       </div>
       <div class="col">
         <button type="submit" class="btn btn-primary">Se connecter</button>
